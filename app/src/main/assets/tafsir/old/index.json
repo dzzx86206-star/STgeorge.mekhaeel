@@ -1,0 +1,275 @@
+[
+  {
+    "id": "takoween",
+    "order": 1,
+    "title": "سفر التكوين",
+    "testament": "old",
+    "file": "takoween.json"
+  },
+  {
+    "id": "khroj",
+    "order": 2,
+    "title": "سفر الخروج",
+    "testament": "old",
+    "file": "khroj.json"
+  },
+  {
+    "id": "laween",
+    "order": 3,
+    "title": "سفر اللاويين",
+    "testament": "old",
+    "file": "laween.json"
+  },
+  {
+    "id": "adad",
+    "order": 4,
+    "title": "سفر العدد",
+    "testament": "old",
+    "file": "adad.json"
+  },
+  {
+    "id": "tathnia",
+    "order": 5,
+    "title": "سفر التثنية",
+    "testament": "old",
+    "file": "tathnia.json"
+  },
+  {
+    "id": "yashoa",
+    "order": 6,
+    "title": "سفر يشوع",
+    "testament": "old",
+    "file": "yashoa.json"
+  },
+  {
+    "id": "quda",
+    "order": 7,
+    "title": "سفر القضاة",
+    "testament": "old",
+    "file": "quda.json"
+  },
+  {
+    "id": "raos",
+    "order": 8,
+    "title": "سفر راعوث",
+    "testament": "old",
+    "file": "raos.json"
+  },
+  {
+    "id": "samoual1",
+    "order": 9,
+    "title": "سفر صموئيل الأول",
+    "testament": "old",
+    "file": "samoual1.json"
+  },
+  {
+    "id": "samoual2",
+    "order": 10,
+    "title": "سفر صموئيل الثاني",
+    "testament": "old",
+    "file": "samoual2.json"
+  },
+  {
+    "id": "mluk1",
+    "order": 11,
+    "title": "سفر الملوك الأول",
+    "testament": "old",
+    "file": "mluk1.json"
+  },
+  {
+    "id": "mluk2",
+    "order": 12,
+    "title": "سفر الملوك الثاني",
+    "testament": "old",
+    "file": "mluk2.json"
+  },
+  {
+    "id": "akhbar1",
+    "order": 13,
+    "title": "سفر أخبار الأيام الأول",
+    "testament": "old",
+    "file": "akhbar1.json"
+  },
+  {
+    "id": "akhbar2",
+    "order": 14,
+    "title": "سفر أخبار الأيام الثاني",
+    "testament": "old",
+    "file": "akhbar2.json"
+  },
+  {
+    "id": "ezra",
+    "order": 15,
+    "title": "سفر عزرا",
+    "testament": "old",
+    "file": "ezra.json"
+  },
+  {
+    "id": "nahmeea",
+    "order": 16,
+    "title": "سفر نحميا",
+    "testament": "old",
+    "file": "nahmeea.json"
+  },
+  {
+    "id": "esteer",
+    "order": 17,
+    "title": "سفر أستير",
+    "testament": "old",
+    "file": "esteer.json"
+  },
+  {
+    "id": "ayob",
+    "order": 18,
+    "title": "سفر أيوب",
+    "testament": "old",
+    "file": "ayob.json"
+  },
+  {
+    "id": "mazameer",
+    "order": 19,
+    "title": "سفر المزامير",
+    "testament": "old",
+    "file": "mazameer.json"
+  },
+  {
+    "id": "amthal",
+    "order": 20,
+    "title": "سفر الأمثال",
+    "testament": "old",
+    "file": "amthal.json"
+  },
+  {
+    "id": "gamaa",
+    "order": 21,
+    "title": "سفر الجامعة",
+    "testament": "old",
+    "file": "gamaa.json"
+  },
+  {
+    "id": "nsheed",
+    "order": 22,
+    "title": "سفر نشيد الأنشاد",
+    "testament": "old",
+    "file": "nsheed.json"
+  },
+  {
+    "id": "ashaia",
+    "order": 23,
+    "title": "سفر إشعياء",
+    "testament": "old",
+    "file": "ashaia.json"
+  },
+  {
+    "id": "armia",
+    "order": 24,
+    "title": "سفر إرميا",
+    "testament": "old",
+    "file": "armia.json"
+  },
+  {
+    "id": "mrathyarmeea",
+    "order": 25,
+    "title": "سفر مراثي إرميا",
+    "testament": "old",
+    "file": "mrathyarmeea.json"
+  },
+  {
+    "id": "hzqeel",
+    "order": 26,
+    "title": "سفر حزقيال",
+    "testament": "old",
+    "file": "hzqeel.json"
+  },
+  {
+    "id": "daneel",
+    "order": 27,
+    "title": "سفر دانيال",
+    "testament": "old",
+    "file": "daneel.json"
+  },
+  {
+    "id": "hoshea",
+    "order": 28,
+    "title": "سفر هوشع",
+    "testament": "old",
+    "file": "hoshea.json"
+  },
+  {
+    "id": "yoeel",
+    "order": 29,
+    "title": "سفر يوئيل",
+    "testament": "old",
+    "file": "yoeel.json"
+  },
+  {
+    "id": "amos",
+    "order": 30,
+    "title": "سفر عاموس",
+    "testament": "old",
+    "file": "amos.json"
+  },
+  {
+    "id": "obdia",
+    "order": 31,
+    "title": "سفر عوبديا",
+    "testament": "old",
+    "file": "obdia.json"
+  },
+  {
+    "id": "yonan",
+    "order": 32,
+    "title": "سفر يونان",
+    "testament": "old",
+    "file": "yonan.json"
+  },
+  {
+    "id": "mykha",
+    "order": 33,
+    "title": "سفر ميخا",
+    "testament": "old",
+    "file": "mykha.json"
+  },
+  {
+    "id": "nahoom",
+    "order": 34,
+    "title": "سفر ناحوم",
+    "testament": "old",
+    "file": "nahoom.json"
+  },
+  {
+    "id": "hbqoq",
+    "order": 35,
+    "title": "سفر حبقوق",
+    "testament": "old",
+    "file": "hbqoq.json"
+  },
+  {
+    "id": "safenia",
+    "order": 36,
+    "title": "سفر صفنيا",
+    "testament": "old",
+    "file": "safenia.json"
+  },
+  {
+    "id": "hjey",
+    "order": 37,
+    "title": "سفر حجي",
+    "testament": "old",
+    "file": "hjey.json"
+  },
+  {
+    "id": "zakria",
+    "order": 38,
+    "title": "سفر زكريا",
+    "testament": "old",
+    "file": "zakria.json"
+  },
+  {
+    "id": "mlkhy",
+    "order": 39,
+    "title": "سفر ملاخي",
+    "testament": "old",
+    "file": "mlkhy.json"
+  }
+]

@@ -1,0 +1,90 @@
+rules_version = '2';
+
+// Server-side enforcement of the same RBAC model used in the app
+// (see utils/NavProvider.java and utils/Constants.java on the Android side).
+// This file is what actually protects the data — the in-app role checks are
+// only UX; a client-side check can never be trusted as real security,
+// since anyone can call the Firestore REST API directly and skip the app
+// entirely. Deploy with: firebase deploy --only firestore:rules
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function myRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isManager() {
+      return isSignedIn() && myRole() == 'manager';
+    }
+
+    function isPriestOrManager() {
+      return isSignedIn() && (myRole() == 'priest' || myRole() == 'manager');
+    }
+
+    // manager + priest + servant — used for read/write on ministry data
+    // (announcements, Sunday School classes/children/attendance, etc.)
+    function isStaff() {
+      return isSignedIn() && (myRole() == 'manager' || myRole() == 'priest' || myRole() == 'servant');
+    }
+
+    match /users/{userId} {
+      // Anyone signed in can read their own profile; staff can read anyone's
+      // (needed for the servant-assignment picker, drawer role label, etc.)
+      allow read: if isSignedIn() && (request.auth.uid == userId || isPriestOrManager());
+
+      // Fixed super-admin bootstrap (see AuthHelper#loginAsSuperAdmin): only
+      // the one real account behind "manager"/manager123|manager143 may ever
+      // self-assign role = manager, and only on its own document.
+      allow create, update: if isSignedIn()
+        && request.auth.uid == userId
+        && request.auth.token.email == 'manager@stgeorge.church'
+        && request.resource.data.role == 'manager';
+
+      // Self-registration (المخدوم, RegisterActivity): a new user may create
+      // ONLY their own profile, and it may only ever be role = 'member'.
+      // Nobody can grant themselves servant/priest/manager this way.
+      allow create: if isSignedIn()
+        && request.auth.uid == userId
+        && request.resource.data.role == 'member';
+
+      // Manager adding a servant (AdminUserRepository#createServant), on the
+      // new servant's own uid — restricted to role = 'servant' only.
+      allow create: if isManager() && request.resource.data.role == 'servant';
+
+      // Manager deleting a servant (AdminUserRepository#deleteServant) —
+      // restricted to deleting servant-role profiles only, matching "add and
+      // delete servants only", not arbitrary accounts.
+      allow delete: if isManager() && resource.data.role == 'servant';
+    }
+
+    match /announcements/{id} {
+      allow read: if isSignedIn();
+      allow create, update, delete: if isStaff();
+    }
+
+    match /classes/{id} {
+      allow read: if isSignedIn();
+      allow write: if isManager();
+    }
+
+    match /children/{id} {
+      allow read, write: if isStaff();
+    }
+
+    match /attendance/{id} {
+      allow read, write: if isStaff();
+    }
+
+    // Anything not explicitly modeled yet (news, events, library, hymns,
+    // visitation, ...): require sign-in to read, staff to write. Tighten
+    // per-collection as each of those sections gets its real build stage.
+    match /{document=**} {
+      allow read: if isSignedIn();
+      allow write: if isStaff();
+    }
+  }
+}

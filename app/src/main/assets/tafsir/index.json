@@ -1,0 +1,14 @@
+[
+  {
+    "id": "old",
+    "title": "العهد القديم",
+    "count": 39,
+    "index_file": "old/index.json"
+  },
+  {
+    "id": "new",
+    "title": "العهد الجديد",
+    "count": 27,
+    "index_file": "new/index.json"
+  }
+]

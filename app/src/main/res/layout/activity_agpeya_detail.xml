@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_background"
+    android:fillViewport="true"
+    tools:context=".activities.AgpeyaDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/md_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="صلاة باكر" />
+
+        <TextView
+            android:id="@+id/tvDetailContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/md_on_background"
+            android:textDirection="rtl"
+            android:textSize="17sp"
+            tools:text="نص الصلاة الكامل يظهر هنا..." />
+
+        <TextView
+            android:id="@+id/tvDetailSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/md_on_surface_variant"
+            android:textSize="12sp"
+            tools:text="المصدر: St-Takla.org" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

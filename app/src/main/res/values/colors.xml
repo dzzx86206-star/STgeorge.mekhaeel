@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary palette: deep byzantine gold & blue, inspired by Coptic iconography -->
+    <color name="md_primary">#8B5E2A</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#FFDFB8</color>
+    <color name="md_on_primary_container">#2E1500</color>
+
+    <color name="md_secondary">#1D4E89</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_secondary_container">#D3E4FF</color>
+    <color name="md_on_secondary_container">#001B3D</color>
+
+    <color name="md_background">#FFFBF6</color>
+    <color name="md_on_background">#1F1B16</color>
+    <color name="md_surface">#FFFBF6</color>
+    <color name="md_on_surface">#1F1B16</color>
+    <color name="md_surface_variant">#F0E0CF</color>
+    <color name="md_on_surface_variant">#4F4539</color>
+
+    <color name="md_error">#BA1A1A</color>
+    <color name="md_on_error">#FFFFFF</color>
+
+    <color name="md_outline">#817567</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

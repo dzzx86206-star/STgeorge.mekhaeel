@@ -1,0 +1,50 @@
+[
+  {
+    "id": "prime",
+    "order": 1,
+    "title": "صلاة باكر",
+    "file": "prime.json"
+  },
+  {
+    "id": "third",
+    "order": 2,
+    "title": "صلاة الساعة الثالثة",
+    "file": "third.json"
+  },
+  {
+    "id": "sixth",
+    "order": 3,
+    "title": "صلاة الساعة السادسة",
+    "file": "sixth.json"
+  },
+  {
+    "id": "ninth",
+    "order": 4,
+    "title": "صلاة الساعة التاسعة",
+    "file": "ninth.json"
+  },
+  {
+    "id": "vespers",
+    "order": 5,
+    "title": "صلاة الغروب",
+    "file": "vespers.json"
+  },
+  {
+    "id": "compline",
+    "order": 6,
+    "title": "صلاة النوم",
+    "file": "compline.json"
+  },
+  {
+    "id": "midnight",
+    "order": 7,
+    "title": "صلاة نصف الليل",
+    "file": "midnight.json"
+  },
+  {
+    "id": "veil",
+    "order": 8,
+    "title": "صلاة الستار",
+    "file": "veil.json"
+  }
+]

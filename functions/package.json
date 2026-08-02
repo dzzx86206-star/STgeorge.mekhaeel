@@ -1,0 +1,11 @@
+{
+  "name": "stgeorge-functions",
+  "description": "Optional server-side function for STgeorge: fully deletes a servant's Firebase Auth account (requires Admin SDK, which can only run on a trusted server — never inside the Android app).",
+  "engines": { "node": "20" },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1"
+  },
+  "private": true
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- صورة الكنيسة -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/imgChurch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/md_primary_container"
+                android:contentDescription="@string/nav_home" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- آية اليوم -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/md_secondary_container"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tvVerseOfDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:textColor="@color/md_on_secondary_container"
+                android:textSize="15sp"
+                android:gravity="center"
+                tools:text="«الرب راعيّ فلا يعوزني شيء»" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- آخر إعلان -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/home_latest_announcement"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/md_on_background" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/md_surface_variant">
+
+            <TextView
+                android:id="@+id/tvLatestAnnouncement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/md_on_surface_variant"
+                android:text="@string/home_no_announcements" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- جدول القداسات -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/home_mass_schedule"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/md_on_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/home_mass_schedule_sample"
+            android:textColor="@color/md_on_surface_variant"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- أزرار الوصول السريع -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/home_quick_access"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/md_on_background" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupQuickAccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

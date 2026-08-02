@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">STgeorge</string>
+    <string name="default_notification_channel_id">stgeorge_notifications</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">كنيسة الشهيد العظيم مارجرجس</string>
+    <string name="login_subtitle">تسجيل الدخول</string>
+    <string name="username_hint">اسم المستخدم</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="login_button">دخول</string>
+    <string name="login_error_empty">من فضلك أدخل اسم المستخدم وكلمة المرور</string>
+    <string name="login_error_invalid">اسم المستخدم أو كلمة المرور غير صحيحة</string>
+    <string name="loading">جاري تسجيل الدخول...</string>
+
+    <!-- Agpeya (كتاب الأجبية / السواعي) -->
+    <string name="agpeya_title">كتاب الأجبية</string>
+    <string name="agpeya_subtitle">صلوات السواعي الثمان</string>
+    <string name="agpeya_source_format">المصدر: %1$s</string>
+    <string name="agpeya_load_error">تعذّر تحميل نص الصلاة</string>
+    <string name="open_agpeya_button">كتاب الأجبية</string>
+
+    <!-- Tafsir (تفسير الكتاب المقدس) -->
+    <string name="tafsir_title">تفسير الكتاب المقدس</string>
+    <string name="tafsir_subtitle">اختر العهد القديم أو العهد الجديد</string>
+    <string name="tafsir_old_testament">العهد القديم</string>
+    <string name="tafsir_new_testament">العهد الجديد</string>
+    <string name="tafsir_load_error">تعذّر تحميل نص التفسير</string>
+    <string name="open_tafsir_button">تفسير الكتاب المقدس</string>
+
+    <!-- Login screen extra links -->
+    <string name="create_account_link">مستخدم جديد؟ إنشاء حساب</string>
+    <string name="forgot_password_link">نسيت كلمة المرور؟</string>
+    <string name="back">رجوع</string>
+
+    <!-- إنشاء حساب -->
+    <string name="create_account_title">إنشاء حساب</string>
+    <string name="create_account_button">إنشاء الحساب</string>
+    <string name="full_name_hint">الاسم بالكامل</string>
+    <string name="phone_hint">رقم الهاتف</string>
+    <string name="register_error_invalid">من فضلك أدخل الاسم واسم مستخدم صحيح وكلمة مرور 6 حروف على الأقل</string>
+    <string name="register_success">تم إنشاء الحساب بنجاح، يمكنك الآن تسجيل الدخول</string>
+    <string name="register_error_generic">تعذّر إنشاء الحساب، حاول مرة أخرى</string>
+
+    <!-- استعادة كلمة المرور -->
+    <string name="forgot_password_title">استعادة كلمة المرور</string>
+    <string name="forgot_password_subtitle">أدخل اسم المستخدم وسيتم إرسال رابط إعادة تعيين كلمة المرور</string>
+    <string name="send_reset_button">إرسال</string>
+    <string name="reset_error_empty">من فضلك أدخل اسم المستخدم</string>
+    <string name="reset_success">تم إرسال رابط إعادة التعيين، راجع بريدك الإلكتروني</string>
+    <string name="reset_error_generic">تعذّر إرسال الطلب، تأكد من اسم المستخدم وحاول مرة أخرى</string>
+
+    <!-- عناصر القائمة الجانبية (الصلاحيات RBAC عبر NavProvider) -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_announcements">الإعلانات</string>
+    <string name="nav_news">الأخبار</string>
+    <string name="nav_events">الأحداث والمناسبات</string>
+    <string name="nav_library">المكتبة</string>
+    <string name="nav_agpeya">كتاب الأجبية</string>
+    <string name="nav_bible">الكتاب المقدس</string>
+    <string name="nav_hymns">الألحان</string>
+    <string name="nav_coptic_rite">الطقس القبطي</string>
+    <string name="nav_sunday_school">مدارس الأحد</string>
+    <string name="nav_servant_notebook">دفتر التحضير</string>
+    <string name="nav_visitation">الافتقاد</string>
+    <string name="nav_servants_follow_up">متابعة الخدام</string>
+    <string name="nav_communication">التواصل</string>
+    <string name="nav_live_stream">البث المباشر</string>
+    <string name="nav_church_location">موقع الكنيسة</string>
+    <string name="nav_donations">التبرعات</string>
+    <string name="nav_admin_dashboard">لوحة المدير</string>
+    <string name="nav_reports">التقارير</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="logout">تسجيل الخروج</string>
+
+    <!-- الصفحة الرئيسية -->
+    <string name="home_latest_announcement">آخر إعلان</string>
+    <string name="home_no_announcements">لا توجد إعلانات حاليًا</string>
+    <string name="home_mass_schedule">جدول القداسات</string>
+    <string name="home_mass_schedule_sample">قداس الأحد: 7:00 ص\nقداس الجمعة: 6:00 م\nتسبحة عشية السبت: 7:00 م</string>
+    <string name="home_quick_access">أزرار الوصول السريع</string>
+
+    <!-- شاشة "قريبًا" لأي قسم لم يُبنى بعد -->
+    <string name="coming_soon_message">هذا القسم قيد التطوير حاليًا، وسيتوفر في تحديث قادم للتطبيق</string>
+
+    <!-- الإعلانات -->
+    <string name="announcement_add_title">إضافة إعلان</string>
+    <string name="announcement_edit_title">تعديل الإعلان</string>
+    <string name="announcement_title_hint">عنوان الإعلان</string>
+    <string name="announcement_body_hint">نص الإعلان</string>
+    <string name="announcement_error_empty">من فضلك أدخل العنوان والنص</string>
+    <string name="announcement_delete_confirm_title">حذف الإعلان؟</string>
+    <string name="announcement_meta_format">%1$s • %2$s</string>
+
+    <!-- عام (أزرار مشتركة ورسائل أخطاء) -->
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تعديل</string>
+    <string name="generic_load_error">تعذّر تحميل البيانات</string>
+    <string name="generic_save_error">تعذّر حفظ البيانات</string>
+    <string name="generic_delete_error">تعذّر الحذف</string>
+
+    <!-- الإعدادات -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_language_arabic">العربية</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_theme">المظهر</string>
+    <string name="settings_theme_system">حسب إعدادات الجهاز</string>
+    <string name="settings_theme_light">فاتح</string>
+    <string name="settings_theme_dark">داكن</string>
+    <string name="settings_font_size">حجم الخط (الأجبية والكتاب المقدس)</string>
+    <string name="settings_change_password">تغيير كلمة المرور</string>
+    <string name="settings_logout">تسجيل الخروج</string>
+    <string name="settings_restart_note">قد تحتاج لإعادة فتح الشاشة الحالية ليظهر التغيير بالكامل</string>
+
+    <!-- تسميات الصلاحيات (تظهر أعلى القائمة الجانبية) -->
+    <string name="role_manager">المدير العام</string>
+    <string name="role_priest">الأب الكاهن</string>
+    <string name="role_servant">الخادم</string>
+    <string name="role_member">المخدوم</string>
+
+    <string name="login_error_disabled">هذا الحساب موقوف حاليًا، تواصل مع المدير</string>
+
+    <!-- إدارة المستخدمين (الخدام) -->
+    <string name="nav_user_management">إدارة الخدام</string>
+    <string name="servant_none_yet">لا يوجد خدام بعد</string>
+    <string name="servant_add_title">إضافة خادم جديد</string>
+    <string name="servant_edit_title">تعديل بيانات الخادم</string>
+    <string name="servant_meta_format">%1$s • %2$s</string>
+    <string name="servant_error_invalid">من فضلك أدخل الاسم واسم مستخدم وكلمة مرور 6 حروف على الأقل</string>
+    <string name="servant_created">تم إنشاء حساب الخادم بنجاح</string>
+    <string name="servant_error_create">تعذّر إنشاء الحساب، جرّب اسم مستخدم مختلف</string>
+    <string name="servant_error_username_taken">اسم المستخدم هذا مُستخدم من قبل (على الأرجح لخادم محذوف سابقًا) — اختر اسم مستخدم مختلف</string>
+    <string name="servant_delete_confirm_title">حذف الخادم؟</string>
+    <string name="servant_delete_confirm_message">سيتم حذف حساب %1$s نهائيًا ولن يستطيع الدخول للتطبيق بعد الآن.</string>
+
+    <!-- مدارس الأحد — الفصول -->
+    <string name="sunday_school_no_classes">لا توجد فصول بعد</string>
+    <string name="class_add_title">إضافة فصل</string>
+    <string name="class_edit_title">تعديل الفصل</string>
+    <string name="class_stage_hint">المرحلة</string>
+    <string name="class_assign_servants_hint">تعيين الخدام</string>
+    <string name="class_no_servants_yet">لا يوجد خدام مضافون بعد — أضف خادمًا أولًا من "إدارة الخدام"</string>
+    <string name="class_servant_count_format">عدد الخدام: %1$d</string>
+    <string name="class_delete_confirm_title">حذف الفصل؟</string>
+
+    <!-- مدارس الأحد — الأطفال -->
+    <string name="child_search_hint">البحث عن طفل</string>
+    <string name="child_none_yet">لا يوجد أطفال في هذا الفصل بعد</string>
+    <string name="child_add_title">إضافة طفل</string>
+    <string name="child_edit_title">تعديل بيانات الطفل</string>
+    <string name="child_name_hint">اسم الطفل</string>
+    <string name="child_guardian_phone_hint">رقم ولي الأمر</string>
+    <string name="child_birth_date_hint">تاريخ الميلاد (اختياري)</string>
+    <string name="child_notes_hint">ملاحظات</string>
+    <string name="child_meta_format">ولي الأمر: %1$s</string>
+    <string name="child_error_name_empty">من فضلك أدخل اسم الطفل</string>
+    <string name="child_delete_confirm_title">حذف الطفل؟</string>
+
+    <!-- الحضور الأسبوعي -->
+    <string name="attendance_title">الحضور الأسبوعي</string>
+    <string name="attendance_take_button">تسجيل الحضور</string>
+    <string name="attendance_present">حاضر ✅</string>
+    <string name="attendance_absent">غائب ❌</string>
+    <string name="attendance_save_button">حفظ الحضور</string>
+    <string name="attendance_saved">تم حفظ الحضور</string>
+    <string name="attendance_error_incomplete">لم يتم تحديد حالة كل الأطفال، سيتم حفظ من تم تحديده فقط</string>
+    <string name="attendance_stats_format">الإجمالي: %1$d • حاضر: %2$d • غائب: %3$d • نسبة الحضور: %4$s٪</string>
+
+    <!-- سجل الطفل -->
+    <string name="child_record_history_title">سجل الحضور</string>
+    <string name="child_record_no_history">لا يوجد سجل حضور بعد</string>
+    <string name="child_record_stats_format">إجمالي مرات الحضور: %1$d\nإجمالي مرات الغياب: %2$d</string>
+</resources>
